@@ -11,14 +11,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 public class HelloControl {
-    //
-
-      @RequestMapping(name="/getUser", method= RequestMethod.POST)
-      public UserImpl getUser() {
+    @RequestMapping("/hello")
+      public String getUser() {
           UserImpl user=new UserImpl();
           user.setName("⼩小明");
           user.setAddress("海淀区");
-          return user;
+          return "jkjk1";
       }
 
 
